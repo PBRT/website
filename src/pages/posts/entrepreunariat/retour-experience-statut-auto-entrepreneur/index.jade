@@ -1,0 +1,13 @@
+extends /src/layouts/post
+
+block exports
+  -exports.type = "post"
+  -exports.comments = true
+  -exports.author = "kud"
+  -exports.title = "Retour d'éxpérience sur le statut d'auto entrepreneur de la création à la fermeture."
+  -exports.tags = ["auto-entrepreneur", "entreprise"]
+  -exports.date = "2014-05-14"
+
+block main
+  +Post(exports.title)
+    include:md index.md
